@@ -1,0 +1,120 @@
+body{
+    background-color: #808D7C;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 20px auto;
+    width: 50%;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #9CA986;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color:#C9DABF;
+}
+
+.input-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.AddButton {
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.AddButton:hover {
+    background-color: #45a049;
+}
+
+.DeleteButton {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f44336;
+    color: white;
+}
+
+.DeleteButton:hover {
+    background-color: #e53935;
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .AddButton {
+        border-radius: 4px;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+    }
+}
